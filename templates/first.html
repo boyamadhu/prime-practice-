@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'js/MDB/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/MDB/css/mdb.css' %}">
+    <link rel="stylesheet" href="{% static 'js/fontawesome/css/all.css' %}">
+
+    <style>
+        
+        *
+        {
+            margin: 0px;
+        }
+        body
+        {
+            background-color: black;
+        }
+        #a
+        {
+            height: 120px;
+            background-color: black;
+            position: sticky;
+            top: 0px;
+        }
+        #img
+        {
+            height: 120px;
+            width: 250px;
+        }
+        .a
+        {
+           font-size:25px;
+           font-style: italic;
+           font-weight: bold;
+           text-decoration: none;
+            margin: 10px;
+            color: rgb(203, 203, 219);
+            display: inline;
+            justify-content: flex-end;
+            position: relative;
+            left: 400px;
+           
+        }
+        .a:hover
+        {
+            cursor: pointer;
+            color: rgb(50, 83, 104);
+        }
+        #Login
+        {
+            position: relative;
+            color: white;
+            left: 650px;
+            padding: 10px;
+            background-color:crimson ;
+            font-size:20px;
+           font-style:oblique ;
+           font-weight: bold;
+           border-top-right-radius: 10px;
+           border-bottom-left-radius: 10px;
+           text-decoration: none;
+           transition: 1s;
+        }
+        #Login:hover
+        {
+            cursor: pointer;
+            color: white;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+           background-color: rgb(8, 109, 13);
+        }
+        #b
+        {
+            background: url(../static/images/bahubali.jpg) 0px 0px no-repeat scroll;
+            background-size: cover;
+            height: 500px;
+            width: 1500px;
+        }
+        #bb
+        {
+            color: rgb(218, 208, 214);
+            font-weight: bolder;
+            height: 500px;
+            width: 1500px;
+            text-decoration: underline;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        button
+        {
+            height: 40px;
+            width: 300px;
+            color: black;
+            background-color:aqua;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #c
+        {
+            height: 500px;
+            width: 480px;
+        }
+        #d
+        {
+            height: 500px;
+            width: 480px;
+            left: 500px;
+        }
+        #e
+        {
+            height: 500px;
+            width: 493px;
+            left: 1000px;
+            
+        }
+        footer
+		{
+			background-color: black;
+			text-align: center;
+			color: white;
+			padding: 20px;
+		}
+		footer>h1
+		{
+			margin: 0px;
+		}
+        #g
+        {
+            background: url(../static/images/ponni.jpg) 0px 0px no-repeat scroll;
+            background-size: cover;
+            height: 500px;
+            width: 1500px;
+        }
+        #gg
+        {
+            color: rgb(218, 208, 214);
+            font-weight: bolder;
+            height: 500px;
+            width: 1500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <img id="img" src="{% static 'images/amazon_prime1.jpg' %}" alt="">
+        <a class="a" href="#home">Home</a>
+        <a class="a" href="">Store</a>
+        <a class="a" href="{% url 'channels' %}">Channels</a>
+        <a id="Login" href="{% url 'prime_login' %}">Login/Sign up</a>
+    </div>
+    <div id="b">
+        <div id="bb" >
+            <a name="home"></a>
+            <h1>Welcome to Prime Video </h1>
+            <p>Watch the latest Movies, TV Shows, and Award-Winning <br> Amazon Originals</p>
+            <button><a style="color: brown;" href="{% url 'prime_plans' %}">Bye Amazon Subscription Now</a></button>
+        </div>
+    </div>
+    <img id="c" src="{% static 'images/rrr.jpg' %}" alt="">
+    <img id="d"  src="{% static 'images/mahesh.jpg' %}" alt="">
+    <img id="e"  src="{% static 'images/beast.jpg' %}" alt="">
+
+    <div id="g">
+        <div id="gg" >
+            <a name="home"></a>
+            <h1>Prime Plans </h1>
+            <a class="btn btn-primary" href="{% url 'prime_plans' %}">Start Your 30 Days Free Trial</a>
+            <a style="color:white;" href="{% url 'second' %}">Plan Details</a>
+            <a class="btn btn-primary" href="{% url 'second' %}">Monthly Subscription Rs 199 Only</a>
+            <a style="color:white;" href="{% url 'second' %}">Plan Details</a>
+            <a class="btn btn-primary" href="{% url 'second' %}">Yearly Subscription Rs 599 Only </a>
+            <br>
+            <a class="btn btn-primary" href="{% url 'prime_plans' %}">View all Plans</a>
+        </div>
+    <!-- </div>
+    </div> -->
+    <footer>
+		<h1 style="color: orangered;"><i class="fab fa-amazon" style="color: white;"></i> Video</h1>
+		<p>All Rights Are Reserved</p>
+		<small>Develouped And Maintained By
+			<a href="http://www.primevideo.com">AMAZON</a>
+		</small>
+	</footer>
+
+</body>
+</html>

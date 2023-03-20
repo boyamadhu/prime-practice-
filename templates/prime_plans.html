@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'js/MDB/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/MDB/css/mdb.css' %}">
+    <link rel="stylesheet" href="{% static 'js/fontawesome/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/prime_plans.css' %}">
+</head>
+<body>
+    <div id="a">
+        <img id="img" src="{% static 'images/prime22.jpg' %}" alt="">
+        <h2 class="aa" style="color: grey;">Watch Now, Cancel Anytime</h2>
+        <h1 class="aa" style="color: white;">Start Your Membership Today</h1>
+        <img id="img2" src="{% static 'images/prime33.jpg' %}" alt="">
+    </div>
+    <br>
+    <h1 class="bbb">Try it for Free</h1>
+    <br>
+    <h3 class="bbb"><span style="color: orangered;">Prime 30 Day free trial</span> is available for you. Chainge or cancel Anytime</h3>
+    <br>
+    <div id="b">
+        <div class="bb">
+            <button class="btn btn-dark btn-lg btn-block">Get All prime benefits</button>
+            <br>
+            <p><span class="tick"></span>unlimited Movies and live sports on prime video</p>
+            <p><span class="tick"></span>Watch on <span style="color: rgb(72, 183, 111);">Any TV,Laptop or Mobile</span> in a household</p>
+            <p><span class="tick"></span><span style="color: rgb(72, 183, 111)";>Add Free</span> video (except sports)</p>
+            <p><span class="tick"></span><span style="color: rgb(72, 183, 111)";>HD/4k UHD</span> video Quality</p>
+            <p><span class="tick"></span><span style="color: rgb(72, 183, 111)";>ADD-free Music</span> on Amazon music for prime Subscribers</p>
+            <br>
+            <br>
+            <br>
+            <h2 style="color: rgb(24, 155, 194)";>Try prime free</h2>
+            <h5>With select Credit and Debit <br> cards or UPI ID</h5>
+            <a class="btn btn-secondary btn-lg" href="{% url 'second' %}">Start Your 30 Days Free Trial</a>
+            <p>After 30 Days you will be automatically <br>charged Rs 1,499/year. Cancel anytimme</p>
+        </div>
+        <div class="cc">
+            <button class="btn btn-dark btn-lg btn-block">Watch Prime Video on mobile device</button>
+            <br>
+            <p><span class="tick"></span>unlimited Movies TV Shows, and <br> live sports on Prime Video</p>
+            <p><span class="tick">Watch on</span>Watch on <span style="color: rgb(208, 37, 51);"> Mobile</span></p>
+            <p><span class="tick"></span>Watch on any one<span style="color: rgb(208, 37, 51)";> Device</span></p>
+            <p><span class="tick"></span><span style="color: rgb(208, 37, 51)";>Add-Supported</span> video</p>
+            <p><span class="tick"></span><span style="color: rgb(208, 37, 51)";>SD</span> video Quality</p>
+            <br>
+            <h2 style="color: rgb(197, 139, 15)";>Rs 599/Month</h2>
+            <h5>With all electronic Methods</h5>
+            <a class="btn btn-info" href="{% url 'second' %}">Subscribe for Rs 599/Month</a>
+            <br>
+            <h2 style="color: rgb(197, 139, 15)";>Rs 179/Month</h2>
+            <a class="btn btn-info" href="{% url 'second' %}">Subscribe for Rs 179/Month</a>
+            <br>
+            <p>After comletion of your plan We will <br> be automatically Notified you</p>
+        </div>
+    </div>
+    <br>
+    <a class="btn btn-lg btn-success" href="{% url 'sam' %}">Go Back to Home Page</a>
+    <footer>
+		<h1 style="color: orangered;"><i class="fab fa-amazon" style="color: white;"></i> Video</h1>
+		<p>All Rights Are Reserved</p>
+		<small>Develouped And Maintained By
+			<a href="http://www.amazon.com">AMAZON</a>
+		</small>
+	</footer>
+    <!-- <div class="DVPAWebWidgetsCustomComponents_Grid__gridItem"><a class="DVPAWebWidgetsCustomComponents_Image__anchor" href="https://www.primevideo.com/region/eu/storefront?contentType=subscription&amp;contentId=amcplusin&amp;benefitId=amcplusin"><img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/Channels/Amc.png" alt="AMC+"></a></div>
+    <a class="DVPAWebWidgetsCustomComponents_Image__anchor" href="https://www.primevideo.com/gp/video/offers?benefitId=docubayin"><img class="DVPAWebWidgetsCustomComponents_Image__image" src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Docubay-426X2947_V1.jpg" alt="TV DocuBay"></a>-->
+</body>
+</html>

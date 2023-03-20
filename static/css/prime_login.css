@@ -1,0 +1,105 @@
+
+        *
+        {
+            margin: 0px;
+        }
+        body
+        {
+            background-color: rgb(27, 23, 23);
+        }
+        p{
+            color: white;
+        }
+        #a
+        {
+            position: relative;
+            left:500px;
+            top:40px;
+            height: 650px;
+            width: 600px;
+        }
+        #bb
+        {
+            width: 440px;
+            height: 570px; ;
+            position: relative;
+            left: 56px;
+            top: 30px;
+        }
+        #b{
+            width: 550px;
+            height: 580px;
+            border: 1px solid white;
+            position: relative;
+            left: 27px;
+            border-radius: 40px;
+            top: 10px;
+        }
+        #h1
+        {
+            color: white;
+            font-weight: bold;
+            font-size: 60px;
+            text-align: center;
+        }
+        h3{
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+        .form-control{
+            height: 45px;
+            border-radius: 20px;
+        }
+        a{
+            position: relative;
+            left: 250px;
+            text-decoration: underline;
+        }
+        #butt{
+            border-radius: 20px;
+        }
+        h2
+        {
+            position: relative;
+            top: 80px;
+            left: -200px;
+        }
+        #x
+        {
+            height: 250px;
+            background-color: black;
+        }
+        #img
+        {
+            height: 100px;
+            width: 100pxpx;
+            position: relative;
+            left: 400px;
+        }
+        .aa
+        {
+            position: relative;
+            left: 400px;
+            top: -10px;
+            font-style: italic;
+        }
+        #img2
+        {
+            position: relative;
+            left: 1050px;
+            top: -170px;
+            height: 170px;
+        }
+        footer
+		{
+			background-color: gray;
+			text-align: center;
+			color: white;
+			padding: 20px;
+		}
+		footer>h1
+		{
+			margin: 0px;
+		}
+    

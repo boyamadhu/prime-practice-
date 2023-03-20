@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'js/MDB/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/MDB/css/mdb.css' %}">
+    <link rel="stylesheet" href="{% static 'js/fontawesome/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/prime_login.css' %}">
+</head>
+<body>
+    <div id="x">
+        <img id="img" src="{% static 'images/prime22.jpg' %}" alt="">
+        <h2 class="aa" style="color: grey;">Watch Now, Cancel Anytime</h2>
+        <h1 class="aa" style="color: white;">Start Your Membership Today</h1>
+        <img id="img2" src="{% static 'images/prime33.jpg' %}" alt="">
+    </div>
+    <form>
+        <fieldset id="a">
+            <h1 id="h1"><span style="color: blue;">prime</span> video</h1>
+            <div id="b">
+                <div id="bb">
+                    <h3> sign in </h3>
+                    <br>
+                    <div class="form-group mb-4">
+                        <p>E-mail or phone number</p>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group mb-4">
+                        <p>Password</p>
+                    </div>
+                    <div class="form-group mb">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group mb-4" id="pas">
+                        <a href=""> forgot your Password?</a>
+                        <br>
+                        <input type="checkbox">  <span style="color: white;">Keep me signed</span>
+                    </div>
+                    <button class=" btn btn-orange btn-block btn-lg" id="butt">Login</button>
+                    <br>
+                    <div class="text-center">
+                        <p><span style="color: green;">New to Amazon?</span></p>
+                    </div>
+                    <button id="butt" class="btn btn-block btn-dark btn-lg">create your Amazon account</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <a class="btn btn-lg btn-success" href="{% url 'sam' %}">Go Back to Home Page</a>
+    <br>
+    <br>
+    <footer>
+		<h1 style="color: orangered;"><i class="fab fa-amazon" style="color: white;"></i> Video</h1>
+		<p>All Rights Are Reserved</p>
+		<small>Develouped And Maintained By<a href="http://www.amazon.com">AMAZON</a></small>
+	</footer>
+
+    <script src="{% static 'js/MDB/js/jquery.js' %}"></script>
+    <script src="{% static 'js/MDB/js/popper.js' %}"></script>
+    <script src="{% static 'js/MDB/js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/MDB/js/mdb.js' %}"></script>
+</body>
+</html>
+
