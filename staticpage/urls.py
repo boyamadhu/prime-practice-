@@ -23,4 +23,5 @@ urlpatterns = [
     path('second/',second,name='second'),
     path('prime_plans/',prime_plans,name='prime_plans'),
     path('channels/',channels,name='channels'),
+    path('scroll/',scroll,name='scroll'),
 ]

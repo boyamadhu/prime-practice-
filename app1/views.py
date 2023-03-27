@@ -16,3 +16,5 @@ def prime_plans(request):
 def channels(request):
     return render(request,'channels.html')
 
+def scroll(request):
+    return render(request,'scroll.html')

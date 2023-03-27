@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0px;
+        }
+        .image-gallery {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 400px;
+          }
+          
+          .image-gallery .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          
+          .image-gallery ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 400%;
+            animation: slide 10s infinite;
+          }
+          
+          .image-gallery li {
+            float: left;
+            width: 25%;
+          }
+          
+          .image-gallery img {
+            width: 100%;
+            height: auto;
+          }
+          
+          @keyframes slide {
+            0% {
+              transform: translateX(0);
+            }
+            20% {
+              transform: translateX(0);
+            }
+            25% {
+              transform: translateX(-25%);
+            }
+            45% {
+              transform: translateX(-25%);
+            }
+            50% {
+              transform: translateX(-50%);
+            }
+            70% {
+              transform: translateX(-50%);
+            }
+            75% {
+              transform: translateX(-75%);
+            }
+            95% {
+              transform: translateX(-75%);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <ul>
+          <li><img src="{% static 'images/bahubali.jpg' %}"></li>
+          <li><img src="{% static 'images/bahubali.jpg' %}"></li>
+          <li><img src="{% static 'images/bahubali.jpg' %}"></li>
+          <li><img src="{% static 'images/bahubali.jpg' %}"></li>
+        </ul>
+    </div>
+
+
+    <div id="b">
+      <div id="bb" >
+          <a name="home"></a>
+          <h1>Welcome to Prime Video </h1>
+          <p>Watch the latest Movies, TV Shows, and Award-Winning <br> Amazon Originals</p>
+          <button><a style="color: brown;" href="{% url 'prime_plans' %}">Bye Amazon Subscription Now</a></button>
+      </div>
+  </div>
+      
+</body>
+</html>
+
+
+        #b
+        {
+            background: url(../static/images/bahubali.jpg) 0px 0px no-repeat scroll;
+            background-size: cover;
+            height: 500px;
+            width: 1500px;
+        }
+        #bb
+        {
+            color: rgb(218, 208, 214);
+            font-weight: bolder;
+            height: 500px;
+            width: 1500px;
+            text-decoration: underline;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        button
+        {
+            height: 40px;
+            width: 300px;
+            color: black;
+            background-color:aqua;
+            border-radius: 5px;
+            font-size: 20px;
+        }
